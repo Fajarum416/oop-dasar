@@ -7,7 +7,7 @@ class Produk
     $penulis,
     $penerbit;
     protected $diskon = 0;  //protected bisa diakses oleh class anak
-    private $harga;         //private hanya bisa diakses oleh class itu sendiri 
+    private $harga;         //private hanya bisa diakses oeh 
 
     public function __construct($judul = "judul", $penulis = "penulis", $penerbit = "penerbit", $harga = 0) // jika objek tidak ada nilai, kasih nilai di constructor
     {
@@ -89,7 +89,7 @@ class Game extends Produk
 
     }
 }
-
+/*
 class CetakInfoProduk
 {
     public function cetak(Produk $produk)
@@ -100,7 +100,7 @@ class CetakInfoProduk
 
 
 }
-
+*/
 
 
 //Objek dari Class Produk-------
