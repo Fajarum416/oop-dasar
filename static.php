@@ -1,16 +1,22 @@
 <?php
 
-class ContohStatic
+class Contoh
 {
     public static $angka = 1;
 
-    public static function halo()
+    public function halo()
     {
-        return "Halo " . self::$angka;
+        return "Halo " . self::$angka++ . "kali. <br>";
     }
 }
 
+$obj = new Contoh();
+echo $obj->halo();
+echo $obj->halo();
+echo $obj->halo();
 
-echo ContohStatic::$angka;
 echo "<br>";
-echo ContohStatic::halo();
+$obj2 = new Contoh();
+echo $obj2->halo();
+echo $obj2->halo();
+echo $obj2->halo();
